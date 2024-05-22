@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
         // Menyimpan informasi pengguna ke session
         $_SESSION['id'] = $row['id'];
         $_SESSION['nama'] = $row['nama'];
-        header("Location: dashboard.php"); // Redirect ke halaman dashboard
+        header("Location: shop.html"); 
         exit;
     } else {
         echo "Password salah!";
