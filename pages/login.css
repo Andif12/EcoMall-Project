@@ -1,0 +1,213 @@
+:root{
+    --blue:#3498db;
+    --white:hsl(230, 100%, 99%);
+    --btn:#81878be0;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+body, html {
+    font-family: monospace;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, hsl(126, 64%, 23%), #39ad44);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.login-container {
+    width: 300px;
+    padding: 40px;
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease; 
+}
+
+.login-container:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3), 
+                0px 0px 40px rgba(0, 0, 0, 0.4); 
+}
+
+.login-container h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #080da18c;
+    border-radius: 3px;
+}
+
+.login-form button {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #2980b9;
+}
+
+.remember-me label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: -20px;
+    color: var(--btn);
+}
+
+.remember-me input[type="checkbox"] {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: -18px;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.login-button.google-button {
+    background-color: #dd4b39; 
+}
+
+.login-button.google-button:hover {
+    background-color: #b83c2b; 
+}
+
+.login-form .message {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--btn);
+}
+
+.login-form .message a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-form .message a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.forgot-pw {
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    text-align: center;
+    color: rgb(9, 9, 203);
+    font-size: xx-small;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: var(--blue);
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-style: italic;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.register-form {
+    text-align: auto;
+}
+
+.register-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.register-form th, .register-form td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.register-form th {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="date"],
+.register-form input[type="password"],
+.register-form input[type="radio"],
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.register-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-form button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .login-container {
+        width: 80%;
+    }
+}
