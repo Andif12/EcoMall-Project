@@ -1,0 +1,133 @@
+:root {
+    --hijau-header-body: #ECFDF5;
+    --hijau-logo: #064E3B;
+    --hijau-tombol: #65A30D;
+    --tulisan: #D1FAE5;
+    --tulisan2: #059669;
+    --tulisan-putih: white;
+    --tulisan-hitam: black;
+    --tulisan-abu: #4B5563;
+    --diskon: #f21616;
+    --bintang: #f3e412;
+}
+
+body {
+    font-family: Arial, sans-serif, 'Inter';
+    margin: 0;
+    padding: 0;
+    background-color: var(--hijau-header-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkout-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h2{
+    color: var(--hijau-logo);
+}
+
+.order-summary h2{
+    text-align: center;
+}
+
+.left-section, .right-section {
+    width: 50%;
+    padding: 20px;
+}
+
+.left-section {
+    border-right: 1px solid #ccc;
+}
+
+.address-details-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.shipping-address, .product-details, .order-summary {
+    margin-bottom: 20px;
+}
+
+.address-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-details p {
+    margin: 5px 0;
+}
+
+.address-id{
+    background-color: var(--tulisan);
+    border-radius: 5px;
+
+}
+
+.address-details-button button {
+    background-color: var(--hijau-tombol);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.product-details {
+    background-color: var(--tulisan);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.product-header, .product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.product-header {
+    font-weight: bold;
+}
+
+.total-section {
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.subtotal, .grand-total, .voucher-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkout-button {
+    background-color: transparent;
+    color: var(--hijau-logo);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid var(--hijau-logo); 
+}
+
+.checkout-button:hover {
+    background-color: var(--tulisan2);
+    color: var(--tulisan-putih);
+    border-color: var(--tulisan2); 
+}
+
