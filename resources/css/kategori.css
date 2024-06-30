@@ -1,0 +1,255 @@
+:root {
+    --hijau-header-body: #ECFDF5;
+    --hijau-logo: #064E3B;
+    --hijau-tombol: #65A30D;
+    --tulisan: #D1FAE5;
+    --tulisan2: #059669;
+    --tulisan-putih: white;
+    --tulisan-hitam: black;
+    --tulisan-abu: #4B5563;
+    --diskon:#f21616;
+    --bintang:#f3e412;
+}
+
+body {
+    font-family: Arial, sans-serif, 'Inter';
+    margin: 0;
+    padding: 0;
+    background-color: var(--hijau-header-body);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: var(--hijau-header-body);
+    color: var(--tulisan-putih);
+    flex-wrap: wrap; 
+}
+
+header .logo {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    color: var(--hijau-logo);
+    font-family: 'inter';
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0; 
+}
+
+header .logo img.icon {
+    width: 2rem;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
+    flex-shrink: 1; 
+}
+
+header .search-bar input {
+    padding: 0.7rem 3.5rem 0.7rem 0.7rem;
+    border: 2px solid var(--hijau-tombol);
+    border-radius: 20px;
+    width: 100%;
+    color: var(--tulisan-abu);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin-right: -1px;
+}
+
+header .search-bar input:focus {
+    outline: none;
+    border-color: var(--hijau-tombol);
+}
+
+.search-bar button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    background-color: var(--hijau-tombol);
+    color: var(--tulisan-putih);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button i {
+    font-size: 1rem;
+}
+
+header .login-button {
+    padding: 0.7rem 1rem;
+    margin-right: 1rem;
+    border: none;
+    background-color: var(--hijau-tombol);
+    color: var(--tulisan-putih);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-shrink: 0; 
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center; 
+    }
+    header .logo,
+    header .search-bar,
+    header .login-button {
+        flex-basis: 100%; 
+        max-width: 100%;
+        margin: 5px 0; 
+    }
+
+    header .search-bar {
+        order: 2; 
+    }
+
+    header .login-button {
+        order: 3; 
+    }
+}
+
+.product-from-home {
+    font-size: 18px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: var(--hijau-logo);
+}
+
+.product-from-home a {
+    text-decoration: none;
+    color: var(--hijau-logo);
+    margin-left: 1.5rem;
+    font-weight: bold;
+}
+.product-from-home a:hover {
+    text-decoration: none;
+}
+
+.product-menu {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 10px;
+    margin-left: 2rem;
+    background-color: var(--hijau-header-body);
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.product-menu a {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: var(--tulisan);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--hijau-logo);
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    scroll-snap-align: center; 
+}
+
+.product-menu a:hover {
+    background-color: var(--tulisan2);
+    color: var(--tulisan-putih);
+}
+
+.product-menu a.active {
+    background-color: var(--hijau-logo);
+    color: var(--tulisan-putih);
+}
+
+.product-menu a.inactive {
+    background-color: var(--tulisan);
+    color: var(--hijau-logo);
+}
+
+.product-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.product-menu {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.footer {
+    background-color: var(--hijau-header-body);
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid var(--hijau-logo);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: "Inter";
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    color: var(--hijau-logo);
+
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+    margin-left: 20px;
+}
+
+.footer-links a {
+    color: var(--hijau-logo);
+    text-decoration: none;
+    margin-right: 18px; 
+}
+
+.footer-links :hover{
+    text-decoration: underline;
+}
+
+.footer-links a:last-child {
+    margin-right: 0; 
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social-media a {
+    display: inline-block;
+    height: 24px;
+    margin-left: 10px; 
+}
+
+.social-media a img {
+    height: 100%;
+}
